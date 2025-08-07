@@ -1,4 +1,0 @@
-Dependencies for Project 'Lab02', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Lab02.s)(0x688AF23E)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC17xx --list "Lab02.lst" --xref -o "Lab02.o" --depend "Lab02.d")
-F (.\1a.s)(0x688AEF46)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC17xx --list "1a.lst" --xref -o "1a.o" --depend "1a.d")
-F (.\1b.s)(0x688AF25F)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC17xx --list "1b.lst" --xref -o "1b.o" --depend "1b.d")
