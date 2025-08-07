@@ -1,0 +1,22 @@
+*** Creating Trace Output File 'Akash230953254.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"l2q1a.o"'
+### List of Objects: adding '"l2q1b.o"'
+### List of Objects: adding '"l3q1.o"'
+### List of Objects: adding '"lab01.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "l2q1a.o" "l2q1b.o" "l3q1.o" "lab01.o" 
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Akash230953254.map" -o Akash230953254.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'Akash230953254.axf'
+### ADS-LD Command File: 'Akash230953254.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'Akash230953254.lnp', Handle=0x00000580
+### Writing '.lnp' file
+### ADS-LD Command file 'Akash230953254.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

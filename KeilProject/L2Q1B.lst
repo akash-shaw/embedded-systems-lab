@@ -1,0 +1,128 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             MyCode, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000                 EXPORT           __L3Q1B
+    4 00000000         
+    5 00000000         __L3Q1B
+    6 00000000 4811            LDR              R0, =SRC
+    7 00000002 4912            LDR              R1, =DST
+    8 00000004 F100 0024       ADD              R0, R0, #36
+    9 00000008 F101 0124       ADD              R1, R1, #36
+   10 0000000C F04F 020A       MOV              R2, #10
+   11 00000010         
+   12 00000010         CopyBackward
+   13 00000010 F850 3904       LDR              R3, [R0], #-4
+   14 00000014 F841 3904       STR              R3, [R1], #-4
+   15 00000018 1E52            SUBS             R2, R2, #1
+   16 0000001A D1F9            BNE              CopyBackward
+   17 0000001C         
+   18 0000001C         STOP
+   19 0000001C E7FE            B                STOP
+   20 0000001E         
+   21 0000001E 00 00 0000000B 
+              0000000C 
+              0000000D 
+              0000000E 
+              0000000F 
+              00000010 
+              00000011 
+              00000012 
+              00000013 
+              00000014 SRC     DCD              11,12,13,14,15,16,17,18,19,20
+   22 00000048         
+   23 00000048 00000000 
+              00000000         AREA             MyData, DATA, READWRITE
+   24 00000000 00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00       DST     SPACE            40
+   25 00000028                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=L2Q1B.d 
+-oL2Q1B.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\
+NXP\LPC17xx --predefine="__EVAL SETA 1" --list=L2Q1B.lst L2Q1B.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CopyBackward 00000010
+
+Symbol: CopyBackward
+   Definitions
+      At line 12 in file L2Q1B.s
+   Uses
+      At line 16 in file L2Q1B.s
+Comment: CopyBackward used once
+MyCode 00000000
+
+Symbol: MyCode
+   Definitions
+      At line 1 in file L2Q1B.s
+   Uses
+      None
+Comment: MyCode unused
+SRC 00000020
+
+Symbol: SRC
+   Definitions
+      At line 21 in file L2Q1B.s
+   Uses
+      At line 6 in file L2Q1B.s
+Comment: SRC used once
+STOP 0000001C
+
+Symbol: STOP
+   Definitions
+      At line 18 in file L2Q1B.s
+   Uses
+      At line 19 in file L2Q1B.s
+Comment: STOP used once
+__L3Q1B 00000000
+
+Symbol: __L3Q1B
+   Definitions
+      At line 5 in file L2Q1B.s
+   Uses
+      At line 3 in file L2Q1B.s
+Comment: __L3Q1B used once
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 24 in file L2Q1B.s
+   Uses
+      At line 7 in file L2Q1B.s
+Comment: DST used once
+MyData 00000000
+
+Symbol: MyData
+   Definitions
+      At line 23 in file L2Q1B.s
+   Uses
+      None
+Comment: MyData unused
+2 symbols
+340 symbols in table

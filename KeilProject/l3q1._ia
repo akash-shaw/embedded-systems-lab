@@ -1,0 +1,5 @@
+--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\NXP\LPC17xx 
+--list "L3Q1.lst" --xref -o "L3Q1.o" --depend "L3Q1.d" "L3Q1.s"
