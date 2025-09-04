@@ -35,7 +35,7 @@ Image Symbol Table
     MyCode                                   0x00000050   Section       80  l2q1b.o(MyCode)
     SRC                                      0x00000070   Data          40  l2q1b.o(MyCode)
     mycode                                   0x000000a0   Section       16  lab01.o(mycode)
-    somevar                                  0x000000a8   Data           4  lab01.o(mycode)
+    src                                      0x000000a8   Data           4  lab01.o(mycode)
     MyData                                   0x10000000   Section       40  l2q1a.o(MyData)
     DST                                      0x10000000   Data          40  l2q1a.o(MyData)
     MyData                                   0x10000028   Section       40  l2q1b.o(MyData)

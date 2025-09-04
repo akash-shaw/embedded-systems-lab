@@ -12,14 +12,14 @@ __Vectors
 	EXPORT Reset_Handler
 
 Reset_Handler
-	LDR R0, =somevar
+	LDR R0, =src
 	LDR R1, [R0]
 	STR R1, [R0]
 
 STOP
 	B STOP
 	
-somevar DCD 0x12345678
+src DCD 0x12345678
 	AREA DATASEG, DATA, READWRITE
 	
 DST DCD 0

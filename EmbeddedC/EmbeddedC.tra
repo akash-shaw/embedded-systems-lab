@@ -1,0 +1,22 @@
+*** Creating Trace Output File 'EmbeddedC.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_lpc17xx.o"'
+### List of Objects: adding '"led.o"'
+### List of Objects: adding '"system_lpc17xx.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "startup_lpc17xx.o" "led.o" "system_lpc17xx.o" 
+--library_type=microlib --strict --scatter "EmbeddedC.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\EmbeddedC.map" -o EmbeddedC.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'EmbeddedC.axf'
+### ADS-LD Command File: 'EmbeddedC.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'EmbeddedC.lnp', Handle=0x000010E4
+### Writing '.lnp' file
+### ADS-LD Command file 'EmbeddedC.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
